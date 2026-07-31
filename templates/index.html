@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Management System</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="/">
+            Visitor Management System
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">
+                        Visitor Registration
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/employee">
+                        Employee Approval
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/visitor_pass">
+                        Visitor Pass
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/checkin">
+                        Check-In / Check-Out
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/reports">
+                        Reports
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">
+                        About
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="container mt-5">
+
+    <div class="text-center">
+
+        <h1 class="display-4 text-primary">
+            Visitor Management System
+        </h1>
+
+        <p class="lead mt-3">
+            Welcome to the Visitor Management System.
+            This application helps organizations manage visitor
+            registration, employee approval, visitor pass generation,
+            check-in/check-out, notifications, and visitor reports.
+        </p>
+
+        <a href="/register" class="btn btn-success btn-lg mt-3">
+            Register Visitor
+        </a>
+
+    </div>
+
+</div>
+
+<!-- Features -->
+<div class="container mt-5">
+
+    <div class="row">
+
+        <div class="col-md-4">
+
+            <div class="card shadow">
+
+                <div class="card-body">
+
+                    <h3 class="text-primary">
+                        Visitor Registration
+                    </h3>
+
+                    <p>
+                        Register visitors by entering their personal
+                        information and uploading ID proof.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card shadow">
+
+                <div class="card-body">
+
+                    <h3 class="text-success">
+                        Employee Approval
+                    </h3>
+
+                    <p>
+                        Employees can approve or reject visitor requests
+                        before granting access.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card shadow">
+
+                <div class="card-body">
+
+                    <h3 class="text-danger">
+                        Reports
+                    </h3>
+
+                    <p>
+                        Generate visitor history and security reports
+                        with complete details.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center mt-5 p-3">
+
+    <p>
+        © 2026 Visitor Management System | Developed using Python Flask, Json Database and Bootstrap
+    </p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
